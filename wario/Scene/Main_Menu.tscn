@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bmh0m8c33c67i"]
+
+[ext_resource type="Texture2D" uid="uid://dxodtij83k2fp" path="res://sprite/bg.jpg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://b840big5uu2ui" path="res://Script/play_button.gd" id="2_epypp"]
+[ext_resource type="Script" uid="uid://cbhyo13pnl2v6" path="res://Script/exit_button.gd" id="3_0hol4"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1088585953]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1202018331]
+visibility_layer = 3
+z_index = -1
+offset_right = 1920.0
+offset_bottom = 1920.0
+scale = Vector2(0.654476, 0.6883592)
+texture = ExtResource("1_wtcfe")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=727065840]
+layout_mode = 0
+offset_left = 305.58804
+offset_top = 40.676437
+offset_right = 404.58804
+offset_bottom = 89.67644
+scale = Vector2(2.0010178, 1.8409723)
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/font_size = 108
+text = "WARIOWARE
+"
+
+[node name="Play_Button" type="Button" parent="." unique_id=1970524806]
+offset_left = 396.0
+offset_top = 329.0
+offset_right = 837.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 80
+text = "PLAY"
+script = ExtResource("2_epypp")
+
+[node name="Exit_Button" type="Button" parent="." unique_id=409916255]
+offset_left = 396.0
+offset_top = 329.0
+offset_right = 837.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 80
+text = "PLAY"
+script = ExtResource("3_0hol4")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Play_Button" to="Play_Button" method="_on_pressed"]
+[connection signal="pressed" from="Exit_Button" to="Exit_Button" method="_on_pressed"]
