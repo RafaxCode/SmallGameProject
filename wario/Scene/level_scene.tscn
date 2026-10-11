@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cand1ywfs7nhh"]
+
+[ext_resource type="Texture2D" uid="uid://dxodtij83k2fp" path="res://sprite/bg.jpg" id="1_vfcv8"]
+[ext_resource type="Texture2D" uid="uid://xlxjgoj74cof" path="res://sprite/heart.png" id="2_kb6yk"]
+
+[node name="level_scene" type="Node2D" unique_id=587898687]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1779439143]
+offset_left = -18.0
+offset_top = -69.0
+offset_right = 1902.0
+offset_bottom = 1851.0
+scale = Vector2(0.628799, 0.4349008)
+texture = ExtResource("1_vfcv8")
+
+[node name="LifeContainer" type="HBoxContainer" parent="." unique_id=1892375534]
+offset_left = 204.00002
+offset_top = 153.00003
+offset_right = 30220.0
+offset_bottom = 6153.0
+scale = Vector2(0.024937224, 0.027592272)
+
+[node name="LifeSprite" type="TextureRect" parent="LifeContainer" unique_id=1239925561]
+layout_mode = 2
+texture = ExtResource("2_kb6yk")
+
+[node name="LifeSprite2" type="TextureRect" parent="LifeContainer" unique_id=1511573519]
+layout_mode = 2
+texture = ExtResource("2_kb6yk")
+
+[node name="LifeSprite3" type="TextureRect" parent="LifeContainer" unique_id=1925510592]
+layout_mode = 2
+texture = ExtResource("2_kb6yk")
+
+[node name="LifeSprite4" type="TextureRect" parent="LifeContainer" unique_id=1073291160]
+layout_mode = 2
+texture = ExtResource("2_kb6yk")
+
+[node name="LifeSprite5" type="TextureRect" parent="LifeContainer" unique_id=257481099]
+layout_mode = 2
+texture = ExtResource("2_kb6yk")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=258227475]
+offset_left = 503.0
+offset_top = 390.0
+offset_right = 701.0
+offset_bottom = 475.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "Level#"
+scroll_active = false
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1300506252]
+offset_left = 536.0
+offset_top = 504.0
+offset_right = 726.0
+offset_bottom = 574.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"
+scroll_active = false

@@ -38,11 +38,11 @@ script = ExtResource("2_epypp")
 
 [node name="Exit_Button" type="Button" parent="." unique_id=409916255]
 offset_left = 396.0
-offset_top = 329.0
+offset_top = 470.0
 offset_right = 837.0
-offset_bottom = 408.0
+offset_bottom = 588.0
 theme_override_font_sizes/font_size = 80
-text = "PLAY"
+text = "EXIT"
 script = ExtResource("3_0hol4")
 metadata/_edit_use_anchors_ = true
 
