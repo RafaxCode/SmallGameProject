@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://cand1ywfs7nhh"]
 
+[ext_resource type="Script" uid="uid://r4gk7h3ksvdb" path="res://Script/timer_screen.gd" id="1_kb6yk"]
 [ext_resource type="Texture2D" uid="uid://dxodtij83k2fp" path="res://sprite/bg.jpg" id="1_vfcv8"]
 [ext_resource type="Texture2D" uid="uid://xlxjgoj74cof" path="res://sprite/heart.png" id="2_kb6yk"]
 
 [node name="level_scene" type="Node2D" unique_id=587898687]
+script = ExtResource("1_kb6yk")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1779439143]
 offset_left = -18.0
